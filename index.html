@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Business Operating System (All-in-One Business Platform)</title>
+<meta name="description" content="Domain, company email, website, CRM and ERP in one system, connected by an AI copilot that runs on your own computer. English and Arabic.">
+<meta property="og:title" content="AI Business Operating System (All-in-One Business Platform)">
+<meta property="og:description" content="Five business tools. One system. One AI on top, running on your own computer.">
+<meta property="og:image" content="https://rana537omar.github.io/ai-business-operating-system-showcase/media/banner.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="media/icon.svg">
+<style>
+:root { --bg: #0b0e1a; --panel: #131829; --line: #262d47; --ink: #eef0f8; --muted: #a3aac4; --brand: #7b93ff; --teal: #5fd4c4; --wa: #25d366; --ai: linear-gradient(115deg, #4361ee 0%, #3a7bf0 40%, #23b5a3 100%); }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font: 16px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; color: var(--ink); background: var(--bg); }
+a { color: var(--brand); }
+img, video { max-width: 100%; display: block; height: auto; }
+.wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+header { position: sticky; top: 0; z-index: 20; background: rgba(11, 14, 26, .9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; gap: 14px; height: 62px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; color: #fff; text-decoration: none; white-space: nowrap; }
+.brand img { width: 30px; height: 30px; }
+.brand small { font-weight: 500; font-size: 13px; color: var(--teal); }
+nav { margin-left: auto; display: flex; gap: 20px; align-items: center; }
+nav a { color: var(--muted); text-decoration: none; font-size: 14.5px; font-weight: 500; }
+nav a:hover { color: #fff; }
+.btn { display: inline-flex; align-items: center; gap: 9px; background: var(--wa); color: #06301a !important; font-weight: 700; padding: 11px 20px; border-radius: 99px; text-decoration: none; }
+.btn.ghost { background: transparent; border: 1px solid #47507a; color: var(--ink) !important; }
+.btn svg { width: 19px; height: 19px; }
+.hero { background: radial-gradient(1100px 620px at 50% 0%, #26338a 0%, #121733 48%, var(--bg) 100%); padding: 74px 0 40px; text-align: center; }
+.hero h1 { font: 800 clamp(36px, 6.2vw, 64px)/1.05 "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif; letter-spacing: -.03em; margin: 0; text-wrap: balance; }
+.hero .type { font-size: clamp(18px, 2.6vw, 25px); color: var(--teal); font-weight: 700; margin: 12px 0 20px; }
+.hero p { max-width: 780px; margin: 0 auto 28px; font-size: 19px; color: #dde1ee; }
+.hero p em { font-style: normal; background: linear-gradient(115deg, #8ea2ff, #5fd4c4); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 700; }
+.cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.shot-hero { margin: 46px auto 0; border-radius: 14px; border: 1px solid var(--line); box-shadow: 0 30px 90px rgba(0, 0, 0, .6); cursor: zoom-in; }
+section { padding: 70px 0; }
+h2 { font-size: clamp(26px, 4vw, 36px); letter-spacing: -.02em; margin: 0 0 8px; text-align: center; text-wrap: balance; }
+.lead { text-align: center; color: var(--muted); max-width: 780px; margin: 0 auto 36px; }
+video { width: 100%; border-radius: 14px; border: 1px solid var(--line); background: #000; box-shadow: 0 24px 70px rgba(0, 0, 0, .55); }
+.links { text-align: center; margin-top: 16px; color: var(--muted); font-size: 14.5px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+.card h3 { margin: 0 0 10px; font-size: 18px; color: #fff; }
+.card ul { margin: 0; padding-left: 18px; color: #d3d7e6; font-size: 15px; }
+.card li { margin-bottom: 7px; }
+.card li b { color: #fff; font-weight: 600; }
+.band { background: linear-gradient(180deg, #10142a, var(--bg)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+/* the diagram */
+.os { max-width: 1000px; margin: 0 auto; }
+.os-ai { display: flex; justify-content: center; }
+.os-ai span { background: var(--ai); color: #fff; font-weight: 800; font-size: 22px; padding: 12px 34px; border-radius: 16px; box-shadow: 0 10px 30px rgba(58, 123, 240, .35); }
+.wires { height: 46px; position: relative; }
+.wires svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.wires path { fill: none; stroke: #6f7fe6; stroke-width: 1.6; stroke-dasharray: 6 7; animation: dash 1.4s linear infinite; }
+@keyframes dash { to { stroke-dashoffset: -26; } }
+.os-row { display: grid; grid-template-columns: 1fr 22px 1fr 22px 1fr 22px 1fr 22px 1fr; padding: 16px; border-radius: 18px; border: 1.5px solid transparent; background: linear-gradient(#141a33, #141a33) padding-box, linear-gradient(90deg, #6b7cf0, #2bb3a3) border-box; }
+.plus { display: grid; place-items: center; color: var(--brand); font-weight: 800; font-size: 20px; }
+.mod { background: #1a2140; border: 1px solid var(--line); border-radius: 14px; padding: 16px 10px; text-align: center; }
+.mod .ic { width: 44px; height: 44px; border-radius: 12px; background: rgba(123, 147, 255, .16); color: #aebbff; display: grid; place-items: center; margin: 0 auto 10px; font-size: 21px; }
+.mod b { display: block; color: #fff; font-size: 16px; }
+.mod small { color: var(--muted); font-size: 13px; }
+.flows { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 16px; margin-top: 40px; }
+.flow { display: flex; gap: 12px; align-items: flex-start; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 13px 16px; font-size: 15px; color: #d3d7e6; }
+.flow .tag { flex: none; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 99px; background: rgba(123, 147, 255, .16); color: #b8c3ff; white-space: nowrap; margin-top: 1px; }
+.flow b { color: #fff; font-weight: 600; }
+.note { text-align: center; color: var(--muted); font-size: 13.5px; margin: 22px auto 0; max-width: 900px; }
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.gallery h3 { grid-column: 1 / -1; margin: 22px 0 0; font-size: 20px; color: #fff; }
+figure { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+figure img { width: 100%; cursor: zoom-in; }
+figcaption { padding: 11px 15px; font-size: 14.5px; color: #d3d7e6; }
+figcaption b { color: #fff; }
+.final { text-align: center; background: radial-gradient(900px 420px at 50% 100%, #26338a 0%, var(--bg) 70%); }
+.final .btn { font-size: 19px; padding: 15px 30px; }
+footer { border-top: 1px solid var(--line); padding: 26px 0 40px; color: var(--muted); font-size: 13.5px; text-align: center; }
+#lb { position: fixed; inset: 0; background: rgba(0, 0, 0, .94); display: none; place-items: center; z-index: 50; padding: 20px; cursor: zoom-out; }
+#lb.on { display: grid; }
+#lb img { max-height: 92vh; border-radius: 10px; }
+@media (max-width: 900px) {
+  .grid, .flows, .gallery { grid-template-columns: 1fr; }
+  .os-row { grid-template-columns: 1fr 1fr; gap: 10px; } .plus, .wires { display: none; }
+  nav a:not(.btn) { display: none; }
+  .brand small { display: none; }
+  .hero { padding-top: 48px; }
+  section { padding: 50px 0; }
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="#top"><img src="media/icon.svg" alt=""> AI Business Operating System <small>(All-in-One Business Platform)</small></a>
+  <nav><a href="#demo">Demo</a><a href="#how">How it works</a><a href="#features">Features</a><a href="#screens">Screenshots</a>
+    <a class="btn" href="https://wa.me/201208562225?text=Hello%2C%20I%20saw%20AI%20Business%20Operating%20System%20(All-in-One%20Business%20Platform)%20and%20I%20would%20like%20to%20get%20the%20full%20system%20and%20the%20source%20code." target="_blank" rel="noopener">WhatsApp</a></nav>
+</div></header>
+
+<div class="hero" id="top"><div class="wrap">
+  <h1>AI Business Operating System</h1>
+  <div class="type">(All-in-One Business Platform)</div>
+  <p>Your company's <b>domain, company email, website, CRM and ERP</b> in one system. The modules hand work to each other automatically, and <em>one AI copilot</em> on top sees all of them, running on your own computer.</p>
+  <div class="cta">
+    <a class="btn" href="https://wa.me/201208562225?text=Hello%2C%20I%20saw%20AI%20Business%20Operating%20System%20(All-in-One%20Business%20Platform)%20and%20I%20would%20like%20to%20get%20the%20full%20system%20and%20the%20source%20code." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.3z"/></svg>Get the full system &amp; code</a>
+    <a class="btn ghost" href="#demo">Watch the demo</a>
+  </div>
+  <img class="shot-hero zoom" src="media/overview.png" alt="Overview: the AI layer connected to Domain, ERP, CRM, Website and Company Email, with the daily brief and key numbers" width="1920" height="1080">
+</div></div>
+
+<section id="demo"><div class="wrap">
+  <h2>See the whole system in three minutes</h2>
+  <p class="lead">A captioned walkthrough with no sound. A website visitor becomes a CRM lead and gets an AI reply. The AI triages and answers email, a won deal turns into an ERP order and invoice, and a new employee gets a mailbox. It ends with the automations, Arabic and dark mode.</p>
+  <video controls preload="none" poster="media/video-poster.png" src="media/AI-Business-Operating-System-demo.mp4"></video>
+  <p class="links"><a href="https://github.com/rana537omar/ai-business-operating-system-showcase/releases/download/demo-v1/AI-Business-Operating-System-demo.mp4">Download the video (MP4, 9 MB)</a></p>
+</div></section>
+
+<section id="how" class="band"><div class="wrap">
+  <h2>Five tools, connected, with AI on top</h2>
+  <p class="lead">Each module works on its own. Together they share one customer record, one inbox and one set of numbers.</p>
+  <div class="os">
+    <div class="os-ai"><span>AI ✦</span></div>
+    <div class="wires"><svg viewBox="0 0 1000 46" preserveAspectRatio="none"><path d="M500 0 V20 M100 20 H900 M100 20 V46 M300 20 V46 M500 20 V46 M700 20 V46 M900 20 V46"/></svg></div>
+    <div class="os-row">
+      <div class="mod"><div class="ic">🌐</div><b>Domain</b><small>DNS, SSL, expiry</small></div><div class="plus">+</div>
+      <div class="mod"><div class="ic">⚙️</div><b>ERP</b><small>Finance, stock, team</small></div><div class="plus">+</div>
+      <div class="mod"><div class="ic">👥</div><b>CRM</b><small>Leads, pipeline</small></div><div class="plus">+</div>
+      <div class="mod"><div class="ic">🖥️</div><b>Website</b><small>Pages, forms, catalog</small></div><div class="plus">+</div>
+      <div class="mod"><div class="ic">✉️</div><b>Company Email</b><small>Mailboxes, team inboxes</small></div>
+    </div>
+  </div>
+  <div class="flows">
+    <div class="flow"><span class="tag">Website → CRM</span><span>A contact-form inquiry becomes a <b>lead with a deal</b>, lands in <b>sales@</b>, and the AI emails the visitor a personal reply.</span></div>
+    <div class="flow"><span class="tag">CRM → ERP</span><span>A deal marked <b>won</b> creates the <b>sales order and a draft invoice</b>.</span></div>
+    <div class="flow"><span class="tag">ERP → Email</span><span>Sending an invoice <b>emails it from billing@</b> and logs it on the customer's timeline.</span></div>
+    <div class="flow"><span class="tag">ERP → CRM</span><span>A paid invoice marks the contact as a <b>customer</b> and updates lifetime value.</span></div>
+    <div class="flow"><span class="tag">Email → CRM</span><span>A sales email from someone new: the AI spots the intent and <b>creates a lead</b>.</span></div>
+    <div class="flow"><span class="tag">ERP → Email</span><span>A new employee gets a <b>company mailbox</b> and joins their team inbox.</span></div>
+    <div class="flow"><span class="tag">Domain → Email</span><span>Adding a domain writes the <b>MX, SPF, DKIM and DMARC</b> records.</span></div>
+    <div class="flow"><span class="tag">ERP → Website</span><span>Products marked "show on website" appear with <b>live price and stock</b>.</span></div>
+    <div class="flow"><span class="tag">ERP → Email</span><span><b>Low stock</b> drafts a purchase order and alerts ops@.</span></div>
+    <div class="flow"><span class="tag">AI → CRM</span><span>Every new lead gets an <b>AI score</b> and a next best action.</span></div>
+  </div>
+  <p class="note">There are 14 automations in all, and each one can be switched off.</p>
+</div></section>
+
+<section id="features"><div class="wrap">
+  <h2>Everything a company runs on</h2>
+  <p class="lead">For companies that want their tools in one place, in English and Arabic.</p>
+  <div class="grid">
+    <div class="card"><h3>✦ AI layer</h3><ul>
+      <li><b>AI Copilot (Ctrl+K)</b> that sees all five modules.</li>
+      <li><b>Takes actions</b>: creates a lead, a mailbox or a domain.</li>
+      <li><b>Daily brief</b> and <b>needs attention</b> with one-click fixes.</li>
+      <li><b>Writes</b> email replies, summaries, follow-ups and website copy.</li>
+      <li><b>Local and private</b>: runs on your computer through Ollama.</li></ul></div>
+    <div class="card"><h3>🌐 Domain</h3><ul>
+      <li><b>DNS records generated</b> for email and the website.</li>
+      <li>Google Workspace, Microsoft 365, Zoho or the <b>built-in mail server</b>.</li>
+      <li><b>Live DNS and SSL check</b>, expiry tracking and a registry lookup.</li>
+      <li>Domain search and a zone-file download.</li></ul></div>
+    <div class="card"><h3>✉️ Company Email</h3><ul>
+      <li><b>A mailbox for every employee</b> and shared team inboxes.</li>
+      <li><b>AI triage</b>: sales, support, billing, partnership, HR, spam.</li>
+      <li><b>CRM next to every email</b>, and one click to make a lead.</li>
+      <li>Built-in SMTP server, <b>DKIM-signed</b> outgoing mail and an inbound webhook.</li></ul></div>
+    <div class="card"><h3>🖥️ Website</h3><ul>
+      <li><b>Page editor</b> with live preview and AI copywriting.</li>
+      <li><b>Products live from ERP</b>, with price and stock.</li>
+      <li><b>Contact form → CRM + sales@ + AI reply.</b></li>
+      <li>Visits, sources, conversion; Arabic right-to-left sites.</li></ul></div>
+    <div class="card"><h3>👥 CRM</h3><ul>
+      <li><b>Drag-and-drop pipeline</b> with an AI score per deal.</li>
+      <li><b>One timeline per customer</b>: web, email, AI, invoices.</li>
+      <li>Next best action, stalled-deal warnings and tasks.</li>
+      <li>Companies and an AI follow-up email for any deal.</li></ul></div>
+    <div class="card"><h3>⚙️ ERP</h3><ul>
+      <li><b>Finance dashboard</b> and receivables aging.</li>
+      <li><b>Inventory</b>, sales orders, <b>invoices</b> with print/PDF and reminders.</li>
+      <li><b>Purchasing</b> with auto-reorder and suppliers; expenses.</li>
+      <li><b>Team</b>: roles, salaries and leave, with a mailbox for every hire.</li></ul></div>
+  </div>
+  <p class="note"><b>Good to know:</b> it runs on Windows, macOS or Linux with Node.js, and all data stays in one database file on your machine. Email between colleagues is delivered instantly. To send to other companies, you connect your mail provider's SMTP account. To receive directly, it needs a server with a public IP, or you can use the inbound webhook. Domains are bought at a registrar; the system manages them and writes their DNS records. AI writing needs Ollama with a model installed, and the built-in engine covers the rest. The interface is built for desktop and laptop screens.</p>
+  <p class="note"><b>About the demo:</b> Atlas Office Solutions, its owner "Layla Mansour", its customers, emails and figures are fictional sample data. The domain <code>atlasoffice.test</code> is a reserved test name, so its DNS records are shown as already published.</p>
+</div></section>
+
+<section id="screens" class="band"><div class="wrap">
+  <h2>Screenshots</h2>
+  <p class="lead">Click any image to enlarge it.</p>
+  <div class="gallery">
+    <h3>Overview and AI</h3>
+    <figure><img class="zoom" loading="lazy" src="media/overview-attention.png" alt="Needs attention list and activity across modules" width="1920" height="1080"><figcaption><b>Needs attention</b>: risks from every module, with one-click fixes.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/ai-copilot.png" alt="AI Copilot with the daily brief and who to call first" width="1920" height="1080"><figcaption><b>AI Copilot</b>: the daily brief and who to call first.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/ai-action.png" alt="Copilot drawer creating a lead from one sentence" width="1920" height="1080"><figcaption><b>It acts</b>: a lead created from one sentence.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/ai-arabic.png" alt="Copilot answering an Arabic question in Arabic" width="1920" height="1080"><figcaption><b>Arabic</b>: ask in Arabic, get the answer in Arabic.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/automations.png" alt="The 14 automations that connect the modules" width="1920" height="1080"><figcaption><b>14 automations</b> connect the modules.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/overview-arabic.png" alt="Overview in Arabic, right to left" width="1920" height="1080"><figcaption><b>Arabic</b>: a full right-to-left interface.</figcaption></figure>
+    <h3>Domain and Company Email</h3>
+    <figure><img class="zoom" loading="lazy" src="media/domain-dns.png" alt="DNS records for email and the website with live status" width="1920" height="1080"><figcaption><b>DNS</b>: email and website records, generated automatically.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/domain-search.png" alt="Domain availability search" width="1920" height="1080"><figcaption><b>Find a domain</b>: a live availability check.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/mail-arabic.png" alt="Sales team inbox with an Arabic email, AI tag and CRM panel" width="1920" height="1080"><figcaption><b>Team inbox</b>: AI tags, and the CRM next to the email.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/mail-ai-reply.png" alt="Reply drafted by the local AI model" width="1920" height="1080"><figcaption><b>Reply with AI</b>: drafted by the local model.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/mail-summary.png" alt="AI summary of an email from a new lead" width="1920" height="1080"><figcaption><b>Summarize</b>: what they want and what to do next.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/mail-admin.png" alt="Mail admin with mailboxes, aliases and groups" width="1920" height="1080"><figcaption><b>Mail admin</b>: mailboxes, aliases, groups and the mail server.</figcaption></figure>
+    <h3>Website and CRM</h3>
+    <figure><img class="zoom" loading="lazy" src="media/site-editor.png" alt="Website page editor with sections and live preview" width="1920" height="1080"><figcaption><b>Page editor</b>: sections, AI copy and live preview.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/site-products.png" alt="Website products section filled from ERP" width="1920" height="1080"><figcaption><b>Products</b> come live from ERP.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/site-live.png" alt="The published company website" width="1920" height="1080"><figcaption><b>The published website</b>.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/site.png" alt="Website pages, visits and conversion" width="1920" height="1080"><figcaption><b>Website</b>: pages, visits and conversion.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/crm-pipeline.png" alt="CRM pipeline with AI scores" width="1920" height="1080"><figcaption><b>Pipeline</b>: an AI score on every deal.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/crm-contact-website.png" alt="Website lead timeline with the AI reply and score" width="1920" height="1080"><figcaption><b>Customer timeline</b>: website form, AI reply and score.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/crm-contacts.png" alt="Contacts with AI score and next best action" width="1920" height="1080"><figcaption><b>Contacts</b>: score and next best action.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/site-inquiries.png" alt="Website inquiries linked to CRM" width="1920" height="1080"><figcaption><b>Inquiries</b>: every form becomes a CRM lead.</figcaption></figure>
+    <h3>ERP</h3>
+    <figure><img class="zoom" loading="lazy" src="media/erp-dashboard.png" alt="Finance dashboard with revenue vs expenses and receivables aging" width="1920" height="1080"><figcaption><b>Finance</b>: revenue against expenses and receivables aging.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/erp-products.png" alt="Products and inventory with low stock and website toggles" width="1920" height="1080"><figcaption><b>Inventory</b>: margins, low stock and the website toggle.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/erp-invoice.png" alt="Overdue invoice with send reminder and mark paid" width="1920" height="1080"><figcaption><b>Invoices</b>: send, remind and mark as paid.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/invoice-print.png" alt="Printable invoice" width="1920" height="1080"><figcaption><b>Printable invoice</b> (PDF).</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/erp-purchasing.png" alt="Purchase orders drafted automatically and suppliers" width="1920" height="1080"><figcaption><b>Purchasing</b>: auto-drafted purchase orders.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/erp-team.png" alt="Team with roles, salaries, leave and mailboxes" width="1920" height="1080"><figcaption><b>Team</b>: roles, salaries, leave and mailboxes.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/crm-arabic.png" alt="CRM pipeline in Arabic" width="1920" height="1080"><figcaption><b>Arabic pipeline</b>, right to left.</figcaption></figure>
+    <figure><img class="zoom" loading="lazy" src="media/dark.png" alt="ERP dashboard in dark mode" width="1920" height="1080"><figcaption><b>Dark mode</b>.</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Get the full system</h2>
+  <p class="lead">If you want the AI Business Operating System for your own company or your clients, a live demo, or the complete source code, message me on WhatsApp.</p>
+  <a class="btn" href="https://wa.me/201208562225?text=Hello%2C%20I%20saw%20AI%20Business%20Operating%20System%20(All-in-One%20Business%20Platform)%20and%20I%20would%20like%20to%20get%20the%20full%20system%20and%20the%20source%20code." target="_blank" rel="noopener">WhatsApp +20 120 856 2225</a>
+</div></section>
+
+<footer><div class="wrap">Copyright © 2026 Rana Omar. All rights reserved. The AI Business Operating System and its source code are proprietary and are not included in this showcase. The company, people and figures in the demo are fictional.</div></footer>
+
+<div id="lb"><img alt=""></div>
+<script>
+const lb = document.getElementById('lb');
+document.querySelectorAll('.zoom').forEach((i) => i.addEventListener('click', () => { lb.firstChild.src = i.src; lb.firstChild.alt = i.alt; lb.classList.add('on'); }));
+lb.addEventListener('click', () => lb.classList.remove('on'));
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') lb.classList.remove('on'); });
+</script>
+</body>
+</html>
